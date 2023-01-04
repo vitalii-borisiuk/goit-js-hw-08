@@ -29,7 +29,7 @@ function messageOutput() {
     const savedMessage = localStorage.getItem(STORAGE_MESSAGE);
     const fromStorage = JSON.parse(savedMessage);
     
-    if (savedMessage) { 
+    if (fromStorage) { 
         refs.email.value = fromStorage.email;
         refs.textarea.value = fromStorage.message;
     };
