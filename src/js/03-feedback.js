@@ -22,8 +22,11 @@ function onFormSubmit(e) {
         return alert('Введіть всі поля форми');
     }
     console.log(formData);
+
     e.currentTarget.reset();
     localStorage.removeItem(STORAGE_MESSAGE);
+    formData.email = "";
+    formData.message = "";
 };
 
 function onTextareaInput(e) {
